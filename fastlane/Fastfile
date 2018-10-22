@@ -22,8 +22,8 @@ platform :ios do
 
   desc "Description of what the lane does"
   lane :test do
-    sh("cd", "codecoverage-reports")
-    sh("./cc-test-reporter", "before-build", "-d")
+    #sh("cd", "codecoverage-reports")
+    #sh("./cc-test-reporter", "before-build", "-d")
 
     scan(
       project: xcode_project_file,
@@ -44,6 +44,6 @@ platform :ios do
       verbose: true
     )
 
-    sh("./cc-test-reporter", "after-build", "-t", "cobertura", "-r", "009bb546a55026d1bf10f65ba77a79424ba23bfff713e31d78c62ddb0012d5ae", "-d", "--exit-code", "$?")
+    #sh("./cc-test-reporter", "after-build", "-t", "cobertura", "-r", "009bb546a55026d1bf10f65ba77a79424ba23bfff713e31d78c62ddb0012d5ae", "-d", "--exit-code", "$?")
   end
 end

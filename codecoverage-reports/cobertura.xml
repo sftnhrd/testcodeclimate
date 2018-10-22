@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="1.0000000000000000" branch-rate="1.0000000000000000" lines-covered="14" lines-valid="14" branches-covered="0" branches-valid="0" complexity="0.0" timestamp="1540219145" version="Slather 2.4.6">
+<coverage line-rate="1.0000000000000000" branch-rate="1.0000000000000000" lines-covered="14" lines-valid="14" branches-covered="0" branches-valid="0" complexity="0.0" timestamp="1540224098" version="Slather 2.4.6">
   <sources>
     <source>/Users/artyomukha/Documents/Projects/TestCodeClimate</source>
   </sources>
