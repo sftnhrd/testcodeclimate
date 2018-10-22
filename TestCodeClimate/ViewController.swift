@@ -13,10 +13,17 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+
+		print("One")
+		print("Two")
+		print("Three")
 	}
 
 	func doSmth() {
 		print(model.text)
+
+		print("One")
+		print("Two")
+		print("Three")
 	}
 }
