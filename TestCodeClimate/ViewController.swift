@@ -9,12 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+	let model = Model(key: "key", value: "value")
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+
+		print("One")
+		print("Two")
+		print("Three")
 	}
 
+	func doSmth() {
+		print(model.text)
 
+		print("One")
+		print("Two")
+		print("Three")
+	}
 }
-
