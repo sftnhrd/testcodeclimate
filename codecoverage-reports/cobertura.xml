@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="1.0000000000000000" branch-rate="1.0000000000000000" lines-covered="14" lines-valid="14" branches-covered="0" branches-valid="0" complexity="0.0" timestamp="1540219145" version="Slather 2.4.6">
+  <sources>
+    <source>/Users/artyomukha/Documents/Projects/TestCodeClimate</source>
+  </sources>
+  <packages>
+    <package name="TestCodeClimate" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="AppDelegate" filename="TestCodeClimate/AppDelegate.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="16" branch="false" hits="1"/>
+            <line number="17" branch="false" hits="1"/>
+            <line number="18" branch="false" hits="1"/>
+            <line number="19" branch="false" hits="1"/>
+          </lines>
+        </class>
+        <class name="Model" filename="TestCodeClimate/Model.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="18" branch="false" hits="1"/>
+            <line number="19" branch="false" hits="1"/>
+            <line number="20" branch="false" hits="1"/>
+            <line number="22" branch="false" hits="1"/>
+            <line number="23" branch="false" hits="1"/>
+            <line number="24" branch="false" hits="1"/>
+          </lines>
+        </class>
+        <class name="ViewController" filename="TestCodeClimate/ViewController.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="13" branch="false" hits="1"/>
+            <line number="14" branch="false" hits="1"/>
+            <line number="15" branch="false" hits="1"/>
+            <line number="16" branch="false" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

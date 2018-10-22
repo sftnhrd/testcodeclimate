@@ -16,19 +16,34 @@
 default_platform(:ios)
 
 platform :ios do
+
+  xcode_scheme = "TestCodeClimate"
+  xcode_project_file = "TestCodeClimate.xcodeproj"
+
   desc "Description of what the lane does"
   lane :test do
+    sh("cd", "codecoverage-reports")
+    sh("./cc-test-reporter", "before-build", "-d")
+
     scan(
-      project: "TestCodeClimate.xcodeproj",
-      scheme: "TestCodeClimate",
+      project: xcode_project_file,
+      scheme: xcode_scheme,
       code_coverage: true,
-      clean: true
+      clean: true,
+      derived_data_path: "./DerivedData",
+      output_directory: "./codecoverage-reports"
     )
     slather(
-      proj: "TestCodeClimate.xcodeproj",
-      scheme: "TestCodeClimate",
+      proj: xcode_project_file,
+      scheme: xcode_scheme,
       cobertura_xml: true,
-      teamcity: true
+      teamcity: true,
+      input_format: "profdata",
+      build_directory: "./DerivedData",
+      output_directory: "./codecoverage-reports",
+      verbose: true
     )
+
+    sh("./cc-test-reporter", "after-build", "-t", "cobertura", "-r", "009bb546a55026d1bf10f65ba77a79424ba23bfff713e31d78c62ddb0012d5ae", "-d", "--exit-code", "$?")
   end
 end
